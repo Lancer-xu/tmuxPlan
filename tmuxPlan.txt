@@ -1,0 +1,42 @@
+Command                            Description
+tmux new-session                   Creates a new session without a name. Can be
+                                   shortened to tmux new or simply tmux .
+
+tmux new -s development            Creates a new session called “development.”
+
+tmux new -s development -n editor  Creates a session named “development” and
+                                   names the first window “editor.”
+
+tmux attach -t development         Attaches to a session named “development.”
+                                   Default Commands for Sessions, Windows, and Panes
+
+Command                            Description
+P REFIX d                          Detaches from the session, leaving the session running in the background.
+
+P REFIX :                          Enters Command mode.
+
+P REFIX c                          Creates a new window from within an existing tmux session. Shortcut for new-window .
+
+P REFIX 0 ... 9                    Selects windows by number.
+
+P REFIX w                          Displays a selectable list of windows in the current session.
+
+P REFIX ,                          Displays a prompt to rename a window.
+
+P REFIX &                          Closes the current window after prompting for confirmation.
+
+P REFIX %                          Divides the current window in half vertically.
+
+P REFIX "                          Divides the current window in half horizontally.
+
+Command                            Description
+P REFIX o                          Cycles through open panes.
+
+P REFIX q                          Momentarily displays pane numbers in each pane.
+
+P REFIX x                          Closes the current pane after prompting for confirmation.
+
+P REFIX SPACE                      Cycles through the various pane layouts.
+
+$ tmux kill-session -t basic
+$ tmux kill-session -t second_session
