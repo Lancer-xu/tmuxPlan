@@ -1,0 +1,2 @@
+# tmuxPlan
+tmux normal command
